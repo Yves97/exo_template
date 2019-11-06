@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--own css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--jquery-->
+    <script src="js/jquery.min.js"></script>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  height: auto;
+}
+nav {
+  background-color: #efefef;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 7px 50px rgba(0,0,0,0.35);
+}
+.logo-section {
+  font-size: 24px;
+  padding: 18px;
+  font-family: serif;
+  font-weight: bold;
+}
+.menu-button {
+  float: right;
+  background-color: #222;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  outline: 0;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+nav ul {
+  background-color: #fff;
+  min-height: 0;
+  width: 100%;
+  list-style-type: none;  
+  overflow: hidden;
+  text-align: center;
+  transition: max-height 0.5s;
+  max-height: 0;
+}
+nav ul.show {
+  max-height: 20em;
+}
+nav ul li {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+nav ul li > a {
+  position: relative;
+  font-size: 18px;
+  color: #555;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #e55;
+  transition: all 0.5s;
+}
+li > a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  background-color: #555;  
+  transition: all 0.5s;
+  transform: scale(0);
+}
+li > a:hover:before {
+  background-color: #e55;
+  transform: scale(1);  
+}
+
+/*===========================================media query
+==============================*/
+
+@media screen and (min-width: 600px) {
+  .menu-button {
+    display: none;
+  }
+  .logo-section {
+    float: left;
+  }
+  nav ul{
+    background:transparent;
+    float:right;
+    margin-right: 20px;
+    width:auto;
+    max-height: none;
+  }
+  nav ul li {
+    display: inline-block;
+    border-bottom: 0;
+    padding: 20px;
+    width: auto;
+  }
+    
+}
+</style>
+<body>
+
+        <header>
+                <nav>
+                  <div class="logo-section">
+                    <a href="">LOGO</a>
+                    <button class="menu-button"><i class="fa fa-bars"></i></button>
+                  </div>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolios</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+              </header>
+              
+              <div class="hero">
+                <img src="" alt="">
+              </div>
+
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--own js-->
+    <script src="js/scripts.js"></script>
+              <script>
+                  (function(){
+	$(document).ready(function() {
+		// jQuery codes goes here
+   $('.menu-button').on('click', function(){
+     $('nav ul').toggleClass('show');
+   });
+	});
+})(jQuery);
+              </script>
+</body>
+</html>
