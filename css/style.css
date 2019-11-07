@@ -4,7 +4,7 @@
     --primary-color: #edcb20;
 }
 
-/*-GENERAL<-----------------------------------*/
+/*->GENERAL<-----------------------------------*/
 
 *{
     padding: 0;
@@ -130,8 +130,9 @@ transform: scale(1);
 /*->MAIN<------------------------------------------------*/
 
 #main{
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.534);
+    background: linear-gradient(rgba(0, 0, 0, 0.562),rgba(0, 0, 0, 0.616)),url('../images/g-img17.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
     padding: 7rem 0;
 }
@@ -168,6 +169,12 @@ transform: scale(1);
 .main-articles__info p{
     text-align: left !important;
     margin-left: .5rem;
+    transition: 0.3s;
+}
+
+.main-articles__info a:hover > p{
+    color: var(--primary-color);
+    transition: 0.3s;
 }
 
 .main-articles__info span{
@@ -177,7 +184,7 @@ transform: scale(1);
 
 .main-box__mainCard{
     position: relative;
-    min-height: 40rem;
+    height: 40rem;
     border-bottom: 5px solid var(--primary-color);
 }
 
@@ -188,14 +195,14 @@ transform: scale(1);
     
 }
 
-.main-box__mainCard .main-box__title a{
+.main-box__mainCard .main-box__title a, .main-box__bottom a{
     font-size: 1.7rem;
     color: var(--primary-color);
     font-weight: bold;
     transition: 0.5s;
 }
 
-.main-box__mainCard .main-box__title a:hover{
+.main-box__mainCard .main-box__title a:hover , .main-box__bottom a:hover{
     color: #fff;
     transition: 0.5s;
 }
@@ -212,8 +219,12 @@ transform: scale(1);
 }
 
 .main-box__bottom{
-    
+    width: 100%;
+    padding: 5.5rem .8rem;
+    background: rgba(0, 0, 0, 0.493);
+    border-bottom: 5px solid var(--primary-color);
 }
+
 
 /*->MEDIA QUERYS<------------------------------------------------*/
 
