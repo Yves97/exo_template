@@ -23,7 +23,20 @@ body{
 
 a{
     text-decoration: none !important;
+    color: inherit;
 }
+
+.divider{
+    width: 4%;
+    margin: 0 auto;
+    height: .3rem;
+    background: var(--primary-color);
+}
+
+ul li{
+    list-style: none;
+}
+
 
 
 /*->HEADER<-----------------------------------*/
@@ -31,7 +44,6 @@ a{
 
 header{
     width: 100%;
-    height: 1rem !important;
 }
 
 nav{
@@ -113,6 +125,94 @@ transform: scale(0);
 li > a:hover:before {
 background-color: var(--primary-color);
 transform: scale(1);  
+}
+
+/*->MAIN<------------------------------------------------*/
+
+#main{
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.534);
+    color: #fff;
+    padding: 7rem 0;
+}
+
+#main h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#main p{
+    font-size: 2rem;
+    margin-bottom:3rem;
+}
+
+#main p, #main h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-box{
+    padding-top:5rem;
+}
+
+.main-articles__info{
+    display: flex;
+}
+
+.main-articles__info > img{
+    width: 13rem;
+    height: 13rem;
+    margin-top:1.5rem;
+}
+
+.main-articles__info p{
+    text-align: left !important;
+    margin-left: .5rem;
+}
+
+.main-articles__info span{
+    font-weight: bold;
+    display: flex;
+}
+
+.main-box__mainCard{
+    position: relative;
+    min-height: 40rem;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.main-box__mainCard .main-box__title{
+    position: absolute;
+    bottom:2.5rem;
+    padding-left: .7rem;
+    
+}
+
+.main-box__mainCard .main-box__title a{
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.main-box__mainCard .main-box__title a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.main-box__mainCard .main-box__title h2{
+    width: 80%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.main-box__mainCard, .main-box__leftCard , .main-box__rightCard{
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.main-box__bottom{
+    
 }
 
 /*->MEDIA QUERYS<------------------------------------------------*/
