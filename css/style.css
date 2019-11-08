@@ -225,6 +225,39 @@ transform: scale(1);
     border-bottom: 5px solid var(--primary-color);
 }
 
+/*->WILD<------------------------------------------------*/
+
+#wild{
+    padding: 40px 0;
+}
+
+#wild .wild-first-box{
+    width: 100%;
+    text-align: center;
+}
+
+.wild-box__title{
+    margin:3rem 0;
+}
+
+.wild-box__title h1 , .wild-box__title h3{
+    padding-top:1rem
+}
+
+.wild-second-box{
+    margin-top:5rem;
+}
+
+.wild-img{
+    height: 40rem;
+    width: 100%;
+}
+
+.wild-img img{
+    height: 100% !important;
+}
+
+
 
 /*->MEDIA QUERYS<------------------------------------------------*/
 
