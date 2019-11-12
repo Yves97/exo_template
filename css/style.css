@@ -2,6 +2,9 @@
 
 :root{
     --primary-color: #edcb20;
+    --white-color: #fff;
+    --black-color: #000;
+    --grays-color: #999;
 }
 
 /*->GENERAL<-----------------------------------*/
@@ -100,7 +103,7 @@ border-bottom: .1rem solid #ddd;
 nav ul li > a {
 position: relative;
 font-size: 1.8rem;
-color: #fff;
+color: var(--white-color);
 font-weight: 400;
 text-transform: uppercase;
 }
@@ -129,11 +132,12 @@ transform: scale(1);
 
 /*->MAIN<------------------------------------------------*/
 
+
 #main{
     background: linear-gradient(rgba(0, 0, 0, 0.562),rgba(0, 0, 0, 0.616)),url('../images/g-img17.jpg') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #fff;
+    color: var(--white-color);
     padding: 7rem 0;
 }
 
@@ -203,7 +207,7 @@ transform: scale(1);
 }
 
 .main-box__mainCard .main-box__title a:hover , .main-box__bottom a:hover{
-    color: #fff;
+    color: var(--white-color);
     transition: 0.5s;
 }
 
@@ -227,6 +231,7 @@ transform: scale(1);
 
 /*->WILD<------------------------------------------------*/
 
+
 #wild{
     padding: 40px 0;
 }
@@ -240,21 +245,177 @@ transform: scale(1);
     margin:3rem 0;
 }
 
+.wild-box__title h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.wild-box__title p{
+    font-size: 2rem;
+}
+
 .wild-box__title h1 , .wild-box__title h3{
-    padding-top:1rem
+    padding-top:1rem;
 }
 
 .wild-second-box{
     margin-top:5rem;
 }
 
-.wild-img{
+.wild-text__content{
+    position: absolute;
+    bottom: .5rem;
+    color: var(--white-color);
+    padding: 1.5rem;
+}
+
+.wild-text__content h3{
+    color: var(--primary-color);
+}
+
+.wild-btn{
+    padding: 1rem;
+    border: none;
+    background: var(--primary-color);
+    font-size: 1.6rem;
+    transition: all .5s;
+    margin-top: 1rem;
+}
+
+.wild-btn:hover{
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+/*->READER<------------------------------------------------*/
+
+#reader{
+    padding: 7rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.616)),url('../images/img15.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#reader h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#reader p{
+    margin-bottom:3rem;
+    font-size: 2rem;
+}
+
+#reader h1, #reader p{
+    text-align: center;
+    color: var(--white-color);
+}
+
+.card-reader{
     height: 40rem;
+    background: var(--white-color);
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.card-reader img{
+    height: 60%;
     width: 100%;
 }
 
-.wild-img img{
-    height: 100% !important;
+.reader-text{
+    padding: 1.2rem;
+}
+
+.reader-text h2{
+    color: var(--primary-color);
+}
+
+.reader-text p{
+    color: var(--black-color) !important;
+    text-align: initial !important;
+    font-size: 1.6rem !important;
+}
+
+.reader-text a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+/*->MARINE<------------------------------------------------*/
+
+
+#marine{
+    padding: 4rem 0
+}
+
+#marine h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#marine p{
+    margin-bottom:3rem;
+    font-size: 2rem;
+}
+
+#marine h1, #marine p{
+    text-align: center;
+}
+
+.marine-card__video{
+    height: 60rem;
+    width: 100%;
+    background: blue;
+}
+
+.marine__info{
+    display: flex;
+    margin-top:1rem;
+}
+
+.marine__info img{
+    width: 13rem;
+    height: 13rem;
+    margin-top:1.5rem;
+}
+
+.marine__info p{
+    text-align: left !important;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    transition: all 0.3s;
+}
+
+.marine__info p:hover{
+    color: var(--primary-color);
+}
+
+.marine__info span{
+    font-weight: bold;
+    display: flex;
+}
+
+footer{
+    padding: 2rem 0;
+    background: var(--black-color);
+    color: var(--white-color) !important;
+}
+
+footer p{
+    font-size: 1.6rem;
+    color: var(--grays-color);
+    padding: 1rem;
+}
+
+footer .footer-list .footer-list__item > a{
+    color: var(--grays-color) !important;
+    font-size: 1.6rem;
+    transition: all .3s;
+}
+
+footer .footer-list .footer-list__item > a:hover{
+    color: var(--primary-color) !important;
 }
 
 
