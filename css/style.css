@@ -9,6 +9,7 @@
 
 /*->GENERAL<-----------------------------------*/
 
+
 *{
     padding: 0;
     margin: 0;
@@ -134,7 +135,7 @@ transform: scale(1);
 
 
 #main{
-    background: linear-gradient(rgba(0, 0, 0, 0.562),rgba(0, 0, 0, 0.616)),url('../images/g-img17.jpg') center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.836),rgba(0, 0, 0, 0.877)),url('../images/g-img17.jpg') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: var(--white-color);
@@ -289,9 +290,10 @@ transform: scale(1);
 
 /*->READER<------------------------------------------------*/
 
+
 #reader{
     padding: 7rem 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.616)),url('../images/img15.jpg') center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.774),rgba(0, 0, 0, 0.74)),url('../images/img15.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -422,6 +424,16 @@ footer .footer-list .footer-list__item > a:hover{
 
 /*->MEDIA QUERYS<------------------------------------------------*/
 
+
+@media screen and (max-width: 640px){
+    footer p{
+        padding:0 !important;
+    }
+    #main p{
+        width:100%;
+    }
+
+}
 
 @media screen and (min-width: 600px) {
     .menu-button{
